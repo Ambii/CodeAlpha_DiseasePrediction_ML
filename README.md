@@ -1,19 +1,19 @@
 # CodeAlpha_DiseasePrediction_ML
 A disease prediction system using ensemble methods (Random Forest, XGBoost) and SVM to classify heart disease risk from patient medical data including age, blood pressure, cholesterol levels, and symptoms, optimizing model evaluation through F1-score, confusion matrices, XGBoost, and cross-validation techniques.
 
-# 🏥 Heart Disease Prediction Model
+ Heart Disease Prediction Model
 
 Predicting heart disease using Machine Learning algorithms as part of CodeAlpha Machine Learning Internship.
 
-## 📊 Project Overview
+Project Overview
 
 This project develops a machine learning model to predict the presence of heart disease in patients using the UCI Heart Disease dataset. The model analyzes 13 clinical features to provide binary classification (Disease Present/Absent) with 86.67% accuracy.
 
-## 🎯 Objective
+Objective
 
 Build a reliable classification model that can assist in preliminary heart disease screening by analyzing patient medical data including age, blood pressure, cholesterol levels, and diagnostic test results.
 
-## 📁 Dataset
+Dataset
 
 - **Source:** UCI Machine Learning Repository - Cleveland Heart Disease Database
 - **Size:** 303 patients (297 after cleaning)
@@ -35,7 +35,7 @@ Build a reliable classification model that can assist in preliminary heart disea
 - `ca`: Number of major vessels colored by fluoroscopy
 - `thal`: Thalassemia (blood disorder)
 
-## 🔧 Technologies Used
+Technologies Used
 
 - **Python 3.x**
 - **Libraries:**
@@ -44,7 +44,7 @@ Build a reliable classification model that can assist in preliminary heart disea
   - XGBoost - Gradient boosting
   - matplotlib, seaborn - Data visualization
 
-## 🤖 Models Implemented
+Models Implemented
 
 | Model | Accuracy | ROC-AUC | False Negatives |
 |-------|----------|---------|-----------------|
@@ -52,7 +52,7 @@ Build a reliable classification model that can assist in preliminary heart disea
 | Random Forest | 85.00% | - | 6 |
 | **XGBoost (Final)** | **86.67%** | **0.892** | **5** |
 
-## 📈 Key Results
+Key Results
 
 - **Best Model:** XGBoost Classifier
 - **Accuracy:** 86.67%
@@ -65,30 +65,30 @@ Build a reliable classification model that can assist in preliminary heart disea
 2. **cp** (Chest Pain Type) - 18.02% importance
 3. **ca** (Number of Major Vessels) - 12.17% importance
 
-## 🔍 Methodology
+Methodology
 
 1. **Data Loading & Exploration**
    - Loaded UCI Heart Disease dataset
    - Handled missing values (6 rows with '?')
    - Converted multi-class target to binary
 
-2. **Data Preprocessing**
+2. Data Preprocessing
    - Removed missing values
    - Split features (X) and target (y)
    - Train-test split (80-20)
 
-3. **Model Training**
+3. Model Training
    - Trained 3 models: Logistic Regression, Random Forest, XGBoost
    - Compared performance metrics
    - Selected XGBoost as final model
 
-4. **Model Evaluation**
+4. Model Evaluation
    - Confusion matrix analysis
    - ROC curve and AUC score
    - Feature importance analysis
    - Classification report (precision, recall, F1-score)
 
-## 📊 Visualizations
+Visualizations
 
 - Confusion Matrix
 - ROC Curve
@@ -96,14 +96,14 @@ Build a reliable classification model that can assist in preliminary heart disea
 - Correlation Heatmap
 - Feature Distribution Plots
 
-## 💡 Key Insights
+Key Insights
 
 - Thalassemia (blood disorder) is the strongest predictor of heart disease
 - Chest pain type and number of major vessels are critical indicators
 - Model shows excellent discrimination ability (AUC = 0.892)
 - Only 5 false negatives out of 28 disease cases (82% catch rate)
 
-## 🚀 How to Run
+How to Run
 
 ```bash
 # Clone the repository
@@ -116,7 +116,7 @@ pip install pandas numpy scikit-learn xgboost matplotlib seaborn
 jupyter notebook heart_disease_prediction.ipynb
 ```
 
-## 📂 Project Structure
+Project Structure
 CodeAlpha_HeartDiseaseDetection/
 │
 ├── heart_disease_prediction.ipynb    # Main notebook with complete code
@@ -128,7 +128,7 @@ CodeAlpha_HeartDiseaseDetection/
 ├── feature_importance.png
 └── model_comparison.png
 
-## 🎓 Learning Outcomes
+Learning Outcomes
 
 - Data preprocessing and handling missing values
 - Binary classification with multiple algorithms
@@ -136,7 +136,7 @@ CodeAlpha_HeartDiseaseDetection/
 - Feature engineering and importance analysis
 - Understanding healthcare ML considerations (recall vs precision)
 
-## 🔮 Future Improvements
+Future Improvements
 
 - Hyperparameter tuning using GridSearchCV
 - Feature engineering (polynomial features, interactions)
@@ -151,11 +151,11 @@ Ambreen Zafar
 - GitHub: https://github.com/Ambii
 - Email: venatrixaihorror@gmail.com
 
-## 📜 License
+License
 
 This project was completed as part of the **CodeAlpha Machine Learning Internship Program**.
 
-## 🙏 Acknowledgments
+ 🙏 Acknowledgments
 
 - Dataset: UCI Machine Learning Repository
 - Internship: CodeAlpha
